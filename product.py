@@ -2,7 +2,7 @@ from datetime import datetime
 
 class Product:
     def __init__(self, data=None):
-        self.date = datetime.today().date()
+        self.date = datetime.today().strftime('%Y-%m-%d %H:%M:%S')
         
         self.l1_category = None
         self.l1_category_id = None
